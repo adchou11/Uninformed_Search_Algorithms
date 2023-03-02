@@ -11,6 +11,13 @@ from copy import deepcopy
 
 ############################################################
 # Section 1: N-Queens
+"""
+Implement the function num_placements_all(n), which returns the number of all possible placements of n
+ queens on an n×n
+ board, and the function num_placements_one_per_row(n) that calculates the number of possible placements of n
+ queens on an n×n
+ board such that each row contains exactly one queen.
+"""
 ############################################################
 
 def num_placements_all(n):
@@ -89,6 +96,13 @@ def n_queens_solutions(n):
 
 ############################################################
 # Section 2: Lights Out
+"""
+The Lights Out puzzle consists of an m×n
+ grid of lights, each of which has two states: on and off. The goal of the puzzle is to turn all the lights off, 
+ with the caveat that whenever a light is toggled, its neighbors above, below, to the left, and to the right will be 
+ toggled as well. If a light along the edge of the board is toggled, then fewer than four other lights will be affected, 
+ as the missing neighbors will be ignored.
+"""
 ############################################################
 
 class LightsOutPuzzle(object):
@@ -161,6 +175,23 @@ def create_puzzle(rows, cols):
 #
 ############################################################
 # Section 3: Linear Disk Movement
+
+"""
+In this section, you will investigate the movement of disks on a linear grid.
+
+The starting configuration of this puzzle is a row of ℓ
+ cells, with disks located on cells 0
+ through n−1
+. The goal is to move the disks to the end of the row using a constrained set of actions. At each step, a disk 
+can only be moved to an adjacent empty cell, or to an empty cell two spaces away if another disk is located on 
+the intervening square. Given these restrictions, it can be seen that in many cases, no movements will be possible 
+for the majority of the disks. For example, from the starting position, the only two options are to move the last 
+disk from cell n−1
+ to cell n
+, or to move the second-to-last disk from cell n−2
+ to cell n
+.
+"""
 ############################################################
 
 def solve_identical_disks(length, n):
